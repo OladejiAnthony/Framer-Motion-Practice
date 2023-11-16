@@ -20,12 +20,14 @@ function Box1() {
         transition={{
           type: "spring",
           stiffness: 100,
-          damping: 40,
-          //delay: 3
+          damping: 40,   //delay: 3
 
+          //Or use another type called "tween":
           //type: "tween",
           //duration: 2
         }}
+
+        //practice:
         // animate={{
         //   //x: 1000 or x: "100vw" or "70rem"
         //   opacity: 0.4,
@@ -36,7 +38,6 @@ function Box1() {
         // }}
         
       >
-
       </motion.div>
     </div>
   )
@@ -45,22 +46,19 @@ function Box1() {
 export default Box1
 
 
-//Animate Prop
-//Changing Location, Opacity, Rolling Effect, Spring
 
-//CSS Animation :
-//CSS animation is used to change the style of elements; gradually change from one STYLE to another.
-//To use CSS animation, you must first specify some keyframes for the animation.
+/* 
+*Animate Prop*
+A. is used to ANIMATE elements i.e change the "STYLE" of elements; gradually change from one STYLE to another
+    e.g Direction, Color, Opacity, Text, Fonts etc 
+B. is used to TRANSFORM elements i.e change the "SHAPE", "SIZE" & "POSITION" of an element
+    CSS Transform allow you to move, rotate, scale, and skew elements.
+    e,g translate(), rotate(), scaleX(), scaleY(), scale(), skewX(), skewY(), skew(), matrix()
 
-//CSS Transitions :
-//CSS transitions is used to change the property-value of elements with respect to TIME/SPEED; 
-//you change property values of elements smoothly, over a given duration. e.g {transition: width 2s, height 2s, transform 2s;}
-//To create a transition effect, you must specify two things:
-// a. the CSS property you want to add an effect to 
-// b. the duration of the effect
+*Transition Prop*
+A. is used to perform operations relating to "TIME" & "DURATION" of an element animation
+    CSS transitions is used to change the property-value of elements with respect to "TIME" & "SPEED"; 
+    It allows us to change property values of elements smoothly, over a given duration. 
+    e.g {transition: width 2s, height 2s, transform 2s;}
 
-//CSS Transforms :
-//CSS Transforms allow you to change the SHAPE & LOCATION of an element.
-//it allow you to move, rotate, scale, and skew elements.
-//e,g translate(), rotate(), scaleX(), scaleY(), scale(), skewX(), skewY(), skew(), matrix()
-
+*/
