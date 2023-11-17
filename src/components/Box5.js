@@ -1,15 +1,23 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 function Box5() {
   //KeyFrames
 
   return (
     <div className='box-container'>
-      <div
+      <motion.div
         className='box'
+        animate={{
+          scale: [1, 1.4, 1.4, 1, 1],
+          borderRadius: ["20%","20%","50%","50%","20%",],
+          rotate: [0, 0, 270, 270, 0]
+        }}
+        transition={{
+          duration: 3
+        }}
       >
-
-      </div>
+      </motion.div>
     </div>
   )
 }
