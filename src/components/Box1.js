@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
 function Box1() {
+  //Animation state
   const [isAnimating, setIsAnimating] = useState(false);
 
   return (
@@ -11,7 +12,8 @@ function Box1() {
         onClick={()=> setIsAnimating(!isAnimating)}
         initial={{
           opacity: 0.4
-        }}   //OR use style={{opacity: 0.2}}
+        }}  
+        //OR use style={{opacity: 0.2}}
         animate={{
           x: isAnimating ? 1000 : 0,
           opacity: isAnimating ? 2 : 0.4,
@@ -22,7 +24,7 @@ function Box1() {
           stiffness: 100,
           damping: 40,   //delay: 3
 
-          //Or use another type called "tween":
+          //OR use another type called "tween":
           //type: "tween",
           //duration: 2
         }}
@@ -61,4 +63,10 @@ A. is used to perform operations relating to "TIME" & "DURATION" of an element a
     It allows us to change property values of elements smoothly, over a given duration. 
     e.g {transition: width 2s, height 2s, transform 2s;}
 
+*/
+
+/*
+CSS Animation - we define chnage of Style
+CSS Transform - we define change of Shape, Size, Position
+CSS Transition - we define change of Time and Speed
 */

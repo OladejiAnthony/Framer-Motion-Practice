@@ -2,19 +2,21 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Box2() {
-
+    //Events and Drag
   return (
     <div className='box-container'>
         <motion.div
             className='box'
             whileHover={{
                 scale: 1.4,
+                
             }}
             whileTap={{
-                scale: 0.2
+                scale: 0.2,
+                backgroundColor: "greenyellow"
             }}
             drag
-            //you can also do this: drag="x" or drag="y"
+            //OR you can also do this: drag="x" or drag="y"
             dragConstraints={{
                 left: 20,
                 right: 20,

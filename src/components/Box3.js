@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Box3() {
+    //Box Variant
     const boxVariant = {
         gBig : {
             x: 400,
@@ -13,12 +14,14 @@ function Box3() {
             scale: 0.3
         }
     }
+
   return (
     <div className='box-container'>
         <motion.div
             className='box'
             variants={boxVariant}
             animate="gSmall"
+            
             //additions:
             transition={{
                 type: "spring",
@@ -26,7 +29,8 @@ function Box3() {
                 damping: 70
             }}
             whileTap={{
-                scale: 10
+                scale: 10,
+                backgroundColor: "green"
             }}
 
             //practice:
