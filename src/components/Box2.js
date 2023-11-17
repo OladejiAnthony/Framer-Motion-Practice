@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Box2() {
-    //Events and Drag
+    //Framer Motion Gestures : Events and Drag
   return (
     <div className='box-container'>
         <motion.div
