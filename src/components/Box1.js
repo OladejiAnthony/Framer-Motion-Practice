@@ -24,7 +24,7 @@ function Box1() {
           stiffness: 100,
           damping: 40,   //delay: 3
 
-          //OR use another type called "tween":
+          // type of animation to use : a "Tween", "Spring", "Inertia"
           //type: "tween",
           //duration: 2
         }}

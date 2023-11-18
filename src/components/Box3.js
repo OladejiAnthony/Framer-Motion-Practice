@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Box3() {
-    //Box Variant
+    //Framer Motion Variant
     const boxVariant = {
         gBig : {
             x: 400,
@@ -57,6 +57,7 @@ export default Box3
 *Variants Prop*
     Variants contain a key-vale pair - the key is given a name of your choice, 
         while the value contains your css style you want to use.
+        It is used where there is a list of items or states
 
 */
 

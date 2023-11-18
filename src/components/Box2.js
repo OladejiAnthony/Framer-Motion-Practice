@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Box2() {
-    //Framer Motion Gestures : Events and Drag
+    //Framer Motion Gestures : Events supported are - hover, tap, pan and drag.
   return (
     <div className='box-container'>
         <motion.div

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 function Box5() {
-  //KeyFrames
+  //KeyFrames: Set a value as an array and Motion will animate through each of these values in turn.
 
   return (
     <div className='box-container'>
